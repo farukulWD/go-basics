@@ -1,1 +1,22 @@
-helloworld
+# Binaries
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Compiled Object files, Alias and archive objects
+*.a
+*.o
+*.obj
+
+# Local development
+.env
+.DS_Store
+
+# Go specific
+go.sum
+vendor/
+Makefile
+scripts/
