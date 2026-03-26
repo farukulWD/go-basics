@@ -18,5 +18,5 @@ This directory contains examples of how to declare and use variables and constan
 
 From the project root:
 ```bash
-make run FILE=day2/variables.go
+go run day2/variables.go
 ```

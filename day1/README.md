@@ -17,5 +17,5 @@ Setting up the development environment and writing the first Go program.
 
 From the project root:
 ```bash
-make run FILE=day1/helloworld.go
+go run day1/helloworld.go
 ```

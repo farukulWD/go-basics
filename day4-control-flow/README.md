@@ -20,5 +20,5 @@ This directory explores how to control the execution flow of a Go program using 
 
 From the project root:
 ```bash
-make run FILE=day4-control-flow/main.go
+go run day4-control-flow/main.go
 ```

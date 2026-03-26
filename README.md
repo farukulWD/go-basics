@@ -16,31 +16,13 @@ The project is organized by days of learning, each focusing on specific topics:
 ### Prerequisites
 
 - [Go](https://go.dev/doc/install) (version 1.26.1 or later)
-- `make` utility
-
 ### How to Run
 
-To make development easier, I've included a `Makefile` with several helpful targets:
+To run any of the programs in this repository, navigate to the directory and use the `go run` command:
 
-1.  **List all programs**:
-    ```bash
-    make list
-    ```
-
-2.  **Run a specific program**:
-    ```bash
-    make run FILE=day1/helloworld.go
-    ```
-
-3.  **Build a binary**:
-    ```bash
-    make build FILE=day1/helloworld.go
-    ```
-
-4.  **Clean build artifacts**:
-    ```bash
-    make clean
-    ```
+```bash
+go run day1/helloworld.go
+```
 
 ## 📝 Learning Notes
 

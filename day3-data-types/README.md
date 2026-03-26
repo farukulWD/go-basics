@@ -22,5 +22,5 @@ This directory explores Go's built-in data types, including integers, floats, bo
 
 From the project root:
 ```bash
-make run FILE=day3-data-types/main.go
+go run day3-data-types/main.go
 ```
