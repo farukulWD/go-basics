@@ -14,6 +14,7 @@ The project is organized by days of learning, each focusing on specific topics:
 - **Day 6**: [Day 6: Functions](day6/) - Learning about parameters, returns, and recursion.
 - **Day 7**: [Day 7: Structs and Methods](day7/) - Creating custom objects and receiver functions.
 - **Day 8**: [Day 8: Maps](day8/) - Handling key-value pairs and map iteration.
+- **Day 9**: [Day 9: Practical Projects](day9/) - Putting it all together with CLI mini-apps.
 
 ## 🛠️ Getting Started
 
