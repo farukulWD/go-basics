@@ -12,6 +12,8 @@ The project is organized by days of learning, each focusing on specific topics:
 - **Day 4**: [Day 4: Control Flow](day4-control-flow/) - Mastering if/else, switch, and loops.
 - **Day 5**: [Day 5: Arrays and Slices](day5/) - Exploring fixed-size arrays and dynamic slices.
 - **Day 6**: [Day 6: Functions](day6/) - Learning about parameters, returns, and recursion.
+- **Day 7**: [Day 7: Structs and Methods](day7/) - Creating custom objects and receiver functions.
+- **Day 8**: [Day 8: Maps](day8/) - Handling key-value pairs and map iteration.
 
 ## 🛠️ Getting Started
 

@@ -102,6 +102,39 @@ func add(a int, b int) int {
 func swap(a, b string) (string, string) {
     return b, a // Multiple return values
 }
+
+## 🏗️ Structs & Methods
+
+```go
+type User struct {
+    Name string
+    Age  int
+}
+
+// Method (Receiver function)
+func (u User) Greet() {
+    fmt.Printf("Hello, I'm %s!\n", u.Name)
+}
+```
+
+## 🗺️ Maps
+
+```go
+// Declaration
+m := make(map[string]int)
+m["Age"] = 30
+
+// Literal
+ages := map[string]int{"Alice": 25, "Bob": 35}
+
+// Iteration
+for k, v := range ages {
+    fmt.Println(k, v)
+}
+
+// Delete key
+delete(ages, "Alice")
+```
 ```
 
 ---
