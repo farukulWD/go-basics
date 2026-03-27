@@ -31,6 +31,26 @@ const Pi = 3.14
 
 // Common Types
 int, float64, string, bool
+
+## 🍱 Arrays & Slices
+
+```go
+// Arrays (Fixed size)
+var arr = [3]int{1, 2, 3}
+arr2 := [...]int{1, 2, 3, 4} // Length inferred
+
+// Slices (Dynamic size)
+slice := []int{10, 20}
+slice = append(slice, 30) // Grow slice
+
+// make() function
+s := make([]int, 5, 10) // len=5, cap=10
+
+// range iteration
+for index, value := range slice {
+    fmt.Println(index, value)
+}
+```
 ```
 
 ## 🎮 Control Flow
