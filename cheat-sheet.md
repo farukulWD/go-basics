@@ -135,6 +135,22 @@ for k, v := range ages {
 // Delete key
 delete(ages, "Alice")
 ```
+
+## 📍 Pointers
+
+```go
+var x int = 10
+ptr := &x      // & gets address
+fmt.Println(ptr)  // memory address
+fmt.Println(*ptr) // * dereferences (gets value)
+
+*ptr = 20      // Change original value via pointer
+
+// Function with pointer
+func change(val *int) {
+    *val = 100
+}
+```
 ```
 
 ---
