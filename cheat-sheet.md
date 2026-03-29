@@ -151,6 +151,29 @@ func change(val *int) {
     *val = 100
 }
 ```
+
+## 🧩 Interfaces
+
+```go
+type Shape interface {
+    Area() float64
+}
+
+// Any type with Area() method implements Shape
+type Circle struct { Radius float64 }
+func (c Circle) Area() float64 { return 3.14 * c.Radius * c.Radius }
+
+// Empty interface (holds any type)
+var i any = "Hello"
+
+// Type Switch
+switch v := i.(type) {
+case int:
+    fmt.Println("Integer:", v)
+case string:
+    fmt.Println("String:", v)
+}
+```
 ```
 
 ---
