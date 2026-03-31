@@ -174,6 +174,27 @@ case string:
     fmt.Println("String:", v)
 }
 ```
+
+## ⚠️ Error Handling
+
+```go
+// Basic handling
+res, err := doSomething()
+if err != nil {
+    return fmt.Errorf("failed: %w", err) // %w wraps
+}
+
+// Sentinel Errors
+var ErrNotFound = errors.New("not found")
+if errors.Is(err, ErrNotFound) { ... }
+
+// Custom Errors
+type MyErr struct { Msg string }
+func (e MyErr) Error() string { return e.Msg }
+
+var me MyErr
+if errors.As(err, &me) { ... }
+```
 ```
 
 ---

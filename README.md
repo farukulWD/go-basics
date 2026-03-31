@@ -17,6 +17,7 @@ The project is organized by days of learning, each focusing on specific topics:
 - **Day 9**: [Day 9: Practical Projects](day9/) - Putting it all together with CLI mini-apps.
 - **Day 10**: [Day 10: Pointers](day10/) - Mastering memory addresses and pass-by-reference techniques.
 - **Day 11**: [Day 11: Interfaces](day11/) - Learning about decoupling behavior and implementing polymorphism.
+- **Day 12**: [Day 12: Error Handling](day12/) - Mastering explicit returns, custom errors, and %w wrapping.
 
 ## 🛠️ Getting Started
 
