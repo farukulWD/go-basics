@@ -195,6 +195,20 @@ func (e MyErr) Error() string { return e.Msg }
 var me MyErr
 if errors.As(err, &me) { ... }
 ```
+
+## 🌐 HTTP Server
+
+```go
+func handler(w http.ResponseWriter, r *http.Request) {
+    w.Header().Set("Content-Type", "application/json")
+    json.NewEncoder(w).Encode(data)
+}
+
+func main() {
+    http.HandleFunc("/", handler)
+    http.ListenAndServe(":8080", nil)
+}
+```
 ```
 
 ---
