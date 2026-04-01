@@ -208,6 +208,19 @@ func main() {
     http.HandleFunc("/", handler)
     http.ListenAndServe(":8080", nil)
 }
+
+// Middleware Pattern
+func middleware(next http.Handler) http.Handler {
+    return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+        // logic before
+        next.ServeHTTP(w, r)
+        // logic after
+    })
+}
+
+// Custom Router (ServeMux)
+mux := http.NewServeMux()
+mux.Handle("/api/", middleware(myHandler))
 ```
 ```
 
