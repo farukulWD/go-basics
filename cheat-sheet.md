@@ -222,6 +222,23 @@ func middleware(next http.Handler) http.Handler {
 mux := http.NewServeMux()
 mux.Handle("/api/", middleware(myHandler))
 ```
+
+## 📄 JSON
+
+```go
+type User struct {
+    Name  string `json:"username"`    // rename
+    Age   int    `json:",omitempty"`  // hide if empty
+    Pass  string `json:"-"`          // ignore
+}
+
+// Marshalling (Struct to JSON)
+data, _ := json.Marshal(user)
+fmt.Println(string(data))
+
+// Unmarshalling (JSON to Struct)
+json.Unmarshal(data, &user)
+```
 ```
 
 ---

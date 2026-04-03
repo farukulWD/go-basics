@@ -20,6 +20,7 @@ The project is organized by days of learning, each focusing on specific topics:
 - **Day 12**: [Day 12: Error Handling](day12/) - Mastering explicit returns, custom errors, and %w wrapping.
 - **Day 13**: [Day 13: First HTTP Server](day13-first-http-server/) - Building a basic REST API with net/http and JSON.
 - **Day 14**: [Day 14: Advanced Routing](day14-routing/) - Implementing CRUD patterns, middleware, and struct-based handlers.
+- **Day 15**: [Day 15: JSON Mastery](day15/) - Mastering data serialization, struct tags, and marshalling.
 
 ## 🛠️ Getting Started
 
