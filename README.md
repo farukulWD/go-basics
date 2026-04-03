@@ -21,6 +21,7 @@ The project is organized by days of learning, each focusing on specific topics:
 - **Day 13**: [Day 13: First HTTP Server](day13-first-http-server/) - Building a basic REST API with net/http and JSON.
 - **Day 14**: [Day 14: Advanced Routing](day14-routing/) - Implementing CRUD patterns, middleware, and struct-based handlers.
 - **Day 15**: [Day 15: JSON Mastery](day15/) - Mastering data serialization, struct tags, and marshalling.
+- **Day 16**: [Day 16: Mini User API](day16-mini-user-api/) - Building a multi-file REST API with CRUD logic for users.
 
 ## 🛠️ Getting Started
 
