@@ -239,6 +239,22 @@ fmt.Println(string(data))
 // Unmarshalling (JSON to Struct)
 json.Unmarshal(data, &user)
 ```
+
+## 🍸 Gin Framework
+
+```go
+import "github.com/gin-gonic/gin"
+
+func main() {
+    r := gin.Default()
+
+    r.GET("/ping", func(c *gin.Context) {
+        c.JSON(200, gin.H{"message": "pong"})
+    })
+
+    r.Run() // listens on :8080
+}
+```
 ```
 
 ---
