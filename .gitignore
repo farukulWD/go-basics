@@ -20,3 +20,4 @@ go.sum
 vendor/
 Makefile
 scripts/
+tmp
