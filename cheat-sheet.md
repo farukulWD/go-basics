@@ -255,6 +255,32 @@ func main() {
     r.Run() // listens on :8080
 }
 ```
+
+## 🗄️ GORM & Databases
+
+```go
+import (
+    "gorm.io/gorm"
+    "gorm.io/driver/postgres"
+)
+
+// Model with Tags
+type User struct {
+    gorm.Model           // contains ID, CreatedAt...
+    Name string `gorm:"not null"`
+}
+
+// Connection
+db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
+
+// Operations
+db.AutoMigrate(&User{})      // Sync DB schema
+db.Create(&user)             // Insert
+db.Find(&users)              // Fetch all
+db.First(&user, id)          // Fetch by ID
+db.Save(&user)               // Update
+db.Delete(&user)             // Delete
+```
 ```
 
 ---

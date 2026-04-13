@@ -23,6 +23,9 @@ The project is organized by days of learning, each focusing on specific topics:
 - **Day 15**: [Day 15: JSON Mastery](day15/) - Mastering data serialization, struct tags, and marshalling.
 - **Day 16**: [Day 16: Mini User API](day16-mini-user-api/) - Building a multi-file REST API with CRUD logic for users.
 - **Day 17**: [Day 17: Starting with Gin](day17-gin-starting/) - Transitioning to the popular Gin framework for web development.
+- **Day 18**: [Day 18: Basic CRUD API](day18-basic-crud-api/) - Implementing a structured REST API using MVC-like patterns.
+- **Day 19**: [Day 19: PostgreSQL Connection](day19-postgresql-connection/) - Establishing and pooling connections with `pgx`.
+- **Day 20**: [Day 20: GORM with PostgreSQL](day20-gorm-with-postgresql/) - Using GORM ORM for easy database management and AutoMigration.
 
 ## 🛠️ Getting Started
 
