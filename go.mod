@@ -1,4 +1,4 @@
-module go-basics
+module example.com/go-basics
 
 go 1.26.1
 

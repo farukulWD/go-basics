@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go-basics/day18-basic-crud-api/routes"
+	"net/http"
 
 	"github.com/gin-gonic/gin"
 )
@@ -9,7 +9,11 @@ import (
 func main() {
 	router := gin.Default()
 
-	routes.RegisterRoutes(router)
+	router.GET("/ping", func(ctx *gin.Context) {
+		ctx.JSON(http.StatusOK, gin.H{
+			"message": "I am running air air",
+		})
+	})
 
 	router.Run(":5000")
 }
