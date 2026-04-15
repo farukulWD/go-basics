@@ -281,6 +281,22 @@ db.First(&user, id)          // Fetch by ID
 db.Save(&user)               // Update
 db.Delete(&user)             // Delete
 ```
+
+## 🛡️ Validation (Gin)
+
+```go
+type CreateUser struct {
+    Name  string `binding:"required,min=2"`
+    Email string `binding:"required,email"`
+    Age   int    `binding:"gte=18"`
+}
+
+// In controller
+if err := c.ShouldBindJSON(&input); err != nil {
+    c.JSON(400, gin.H{"error": err.Error()})
+    return
+}
+```
 ```
 
 ---

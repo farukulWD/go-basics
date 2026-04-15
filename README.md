@@ -26,6 +26,7 @@ The project is organized by days of learning, each focusing on specific topics:
 - **Day 18**: [Day 18: Basic CRUD API](day18-basic-crud-api/) - Implementing a structured REST API using MVC-like patterns.
 - **Day 19**: [Day 19: PostgreSQL Connection](day19-postgresql-connection/) - Establishing and pooling connections with `pgx`.
 - **Day 20**: [Day 20: GORM with PostgreSQL](day20-gorm-with-postgresql/) - Using GORM ORM for easy database management and AutoMigration.
+- **Day 21**: [Day 21: Data Validation](day21-validation/) - Implementing strict input validation using Gin's binding tags.
 
 ## 🛠️ Getting Started
 
