@@ -297,6 +297,31 @@ if err := c.ShouldBindJSON(&input); err != nil {
     return
 }
 ```
+
+## 🔒 Authentication & JWT
+
+```go
+// Password Hashing
+hash, _ := bcrypt.GenerateFromPassword([]byte(pass), 10)
+err := bcrypt.CompareHashAndPassword(hash, []byte(pass))
+
+// JWT Generation
+token := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
+    "sub": user.ID,
+    "exp": time.Now().Add(time.Hour).Unix(),
+})
+tokenString, _ := token.SignedString([]byte("secret"))
+
+// Auth Middleware
+func Auth() gin.HandlerFunc {
+    return func(c *gin.Context) {
+        tokenString := c.GetHeader("Authorization")
+        // validate token...
+        c.Set("userID", claims["sub"])
+        c.Next()
+    }
+}
+```
 ```
 
 ---
