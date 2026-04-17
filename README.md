@@ -28,6 +28,7 @@ The project is organized by days of learning, each focusing on specific topics:
 - **Day 20**: [Day 20: GORM with PostgreSQL](day20-gorm-with-postgresql/) - Using GORM ORM for easy database management and AutoMigration.
 - **Day 21**: [Day 21: Data Validation](day21-validation/) - Implementing strict input validation using Gin's binding tags.
 - **Day 22**: [Day 22: JWT Authentication](day22-jwt-auth/) - Securing APIs with JSON Web Tokens and password hashing.
+- **Day 23**: [Day 23: Auth User Project](day23-auth-user-project/) - A production-ready project combining Gin, GORM, and JWT with clean architecture.
 
 ## 🛠️ Getting Started
 
