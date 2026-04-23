@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"go-basics/day25-project-structure/config"
+
+	"github.com/joho/godotenv"
+)
 
 func main() {
-	fmt.Println("Day 25 clean project structure")
+	godotenv.Load()
+
+	config.ConnectDB()
 }
