@@ -29,6 +29,8 @@ The project is organized by days of learning, each focusing on specific topics:
 - **Day 21**: [Day 21: Data Validation](day21-validation/) - Implementing strict input validation using Gin's binding tags.
 - **Day 22**: [Day 22: JWT Authentication](day22-jwt-auth/) - Securing APIs with JSON Web Tokens and password hashing.
 - **Day 23**: [Day 23: Auth User Project](day23-auth-user-project/) - A production-ready project combining Gin, GORM, and JWT with clean architecture.
+- **Day 24**: [Day 24: Middleware in Depth](day24-middleware/) - Mastering global security and observability middleware.
+- **Day 25**: [Day 25: Domain-Driven Structure](day25-project-structure/) - Implementing a scalable, domain-based project architecture with manual DI.
 
 ## 🛠️ Getting Started
 
