@@ -15,7 +15,11 @@ func RequestLogger() gin.HandlerFunc {
 
 		duration := time.Since(start)
 		status := c.Writer.Status()
-		requestID, _ := c.Get("requestID")
+
+		requestID := ""
+		if id, exists := c.Get("requestID"); exists {
+			requestID, _ = id.(string)
+		}
 
 		event := log.Info()
 		if status >= 500 {
@@ -25,7 +29,7 @@ func RequestLogger() gin.HandlerFunc {
 		}
 
 		event.
-			Str("request_id", requestID.(string)).
+			Str("request_id", requestID).
 			Str("method", c.Request.Method).
 			Str("path", c.Request.URL.Path).
 			Str("ip", c.ClientIP()).
