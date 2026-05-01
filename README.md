@@ -32,6 +32,7 @@ The project is organized by days of learning, each focusing on specific topics:
 - **Day 24**: [Day 24: Middleware in Depth](day24-middleware/) - Mastering global security and observability middleware.
 - **Day 25**: [Day 25: Domain-Driven Structure](day25-project-structure/) - Implementing a scalable, domain-based project architecture with manual DI.
 - **Day 26**: [Day 26: Environment Config](day26-environment-config/) - Managing application settings and secrets with a type-safe config system.
+- **Day 27**: [Day 27: Structured Logging](day27-logging/) - Implementing high-performance, structured logging using Zerolog.
 
 ## 🛠️ Getting Started
 

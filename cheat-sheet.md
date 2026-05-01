@@ -322,6 +322,28 @@ func Auth() gin.HandlerFunc {
     }
 }
 ```
+
+## 📜 Structured Logging (Zerolog)
+
+```go
+import "github.com/rs/zerolog/log"
+
+// Basic Levels
+log.Debug().Msg("Useful for developers")
+log.Info().Msg("Normal operational message")
+log.Error().Msg("Something went wrong")
+
+// Structured Fields
+log.Info().
+    Str("module", "auth").
+    Int("status", 200).
+    Dur("latency", 5*time.Millisecond).
+    Msg("Login successful")
+
+// Child Logger
+dbLogger := log.With().Str("component", "db").Logger()
+dbLogger.Info().Msg("Connected to database") // Includes component="db"
+```
 ```
 
 ---
