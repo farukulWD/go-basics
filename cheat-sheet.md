@@ -344,6 +344,35 @@ log.Info().
 dbLogger := log.With().Str("component", "db").Logger()
 dbLogger.Info().Msg("Connected to database") // Includes component="db"
 ```
+
+## 🧪 Testing in Go
+
+```go
+import (
+    "testing"
+    "github.com/stretchr/testify/assert"
+    "github.com/stretchr/testify/require"
+)
+
+// Table-Driven Test
+func TestAdd(t *testing.T) {
+    tests := []struct{ a, b, expected int }{
+        {1, 1, 2},
+        {2, 3, 5},
+    }
+    for _, tt := range tests {
+        result := Add(tt.a, tt.b)
+        assert.Equal(t, tt.expected, result)
+    }
+}
+
+// Testify require vs assert
+func TestSomething(t *testing.T) {
+    err := doWork()
+    require.NoError(t, err) // Stops test here if it fails
+    assert.True(t, condition) // Logs failure but continues
+}
+```
 ```
 
 ---
